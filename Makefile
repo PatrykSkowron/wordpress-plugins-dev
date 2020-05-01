@@ -8,3 +8,8 @@ run:
 .PHONNY: stop
 stop:
 	docker-compose stop
+
+
+disclean:
+	rm -r html
+	rm -r database
