@@ -38,6 +38,12 @@ Add footer text based on options.
 
 Add drop-down list with custom options that are set in options page.
 
+### TODO DevOps
+
+- auto prov. config.tfvars
+- deployment with TF check proper version / install
+- update README
+
 ### TODO
 
 - add multiple drop-down lists (new drop down for every line in options)
