@@ -1,17 +1,17 @@
-version: '3.7'
+version: '3.3'
 services:
   app:
     image: "wordpress:latest"
     volumes:
       - $PWD/html:/var/www/html
-      - $PWD/plugins:/var/www/html/wp-content/plugins/
+      - $PWD/plugins:/var/www/html/wp-content/plugins/:ro
 
     environment:
       WORDPRESS_DB_PASSWORD: $PASSWORD
     links:
       - "db:mysql"
     ports:
-      - "127.0.0.1:80:80"
+      - "80:80"
   db:
     image: "mariadb:latest"
     volumes:
